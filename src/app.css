@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+body {
+    background-color: #142B34;
+        font: 1.2rem/1.5 'Roboto', sans-serif;
+}
+
+h4 {
+    color: #C57B57;
+    font-size: 1.1rem;
+    letter-spacing: 0.02rem;
+}
+h1 {
+    color: rgb(230,230,220);
+    font-size: 4rem;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    color: rgb(200,200,200);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;  
+    line-height: 125%;            
+    color: rgb(180, 180, 180);
+    font-weight: 500;
+}
+
+p span {
+    color: #C57B57;
+}
+
+a {
+
+}
+
+.section-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25rem;
+    max-width: 100%;
+    padding: 0 0 1rem 0;    
+}
+
+.section-head h3{
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    
+}
+.section-head h3 span {
+    color: #C57B57;
+}
+
+.section-head svg{
+    margin-left: 1rem;
+    width: 25rem;
+    height: 1px;
+}
+
+knob.EMG{
+    transform: translate(-2px, calc(0.35rem + 0 * var(--tab-height)))
+}
+knob.BFI{
+    transform: translate(-2px, calc(0.35rem + 1 * var(--tab-height)))
+}
+knob.Misc{
+    transform: translate(-2px, calc(0.35rem + 2 * var(--tab-height)))
+}
