@@ -43,7 +43,7 @@
 
         margin: -12px -16px;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 837px) {
             display: none;
         }
         

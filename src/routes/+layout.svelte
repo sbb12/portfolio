@@ -17,16 +17,35 @@
 <style lang="scss">
     .container {
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         max-width: 1600px; 
         
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         margin: auto;
-        margin-top: -6rem;
+        margin-top: 16rem;
+
+
+        @media screen and (max-width: 1920px) {
+            max-width: 1200px;
+            margin-top: 12rem;
+        }
+
+        @media screen and (max-width: 1600px) {
+            max-width: 1000px;
+            margin-top: 12rem;
+        }
+
+        @media screen and (max-width: 1200px) {
+            max-width: 600px;
+        }
+         
         @media screen and (max-width: 768px) {
             padding: 3rem 2rem;
+            margin-top: 4rem;
         }
+
+        
     }
 
 </style>

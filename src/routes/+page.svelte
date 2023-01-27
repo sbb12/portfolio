@@ -1,6 +1,5 @@
 <script lang="ts">
     import ThreeMe from '../Lib/components/ThreeMe.svelte';
-import TheeMe from '../Lib/components/ThreeMe.svelte';
 </script>
 
 
@@ -18,11 +17,15 @@ import TheeMe from '../Lib/components/ThreeMe.svelte';
 
 <ThreeMe />
 
-<style>
+<style lang="scss">
+    
     left {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        animation: fade 1s linear;
+        
     }
 </style>

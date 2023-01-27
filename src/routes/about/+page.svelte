@@ -3,7 +3,7 @@
 
 </script>
 
-<div class="about">
+<main>
     <left>
         <div class="section-head"> 
             <h3><span>01.</span> About</h3>
@@ -44,21 +44,22 @@
     <right>
         <!-- <img src="placeholder" alt="extremely handsome man"/> -->
     </right>
-</div>
+</main>
 
 
 <style lang="scss">
-    
-    left{
-        display: flex;
-        flex-direction: column;
-
-        .tech-stack, p{
-            padding: 1rem 0;
-        }
-
-        .section-head{
+    main {
+        animation: fade 1s linear;
+        left{
             display: flex;
+            flex-direction: column;
+            
+            .tech-stack, p{
+                padding: 1rem 0;
+            }
+            
+            .section-head{
+                display: flex;
             flex-direction: row;
             align-items: center;
             width: 25rem;
@@ -72,14 +73,14 @@
                     color: #C57B57;
                 }
             }
-
+            
             svg{
                 margin-left: 1rem;
                 width: 25rem;
                 height: 1px;
             }
         }
-
+        
         .tech-stack{
             color: rgb(230,230,230);
         }
@@ -88,16 +89,17 @@
             flex-direction: row;
             width: 100%;
             max-width: 100%;
-
+            
             ol{
                 list-style: none;
                 padding-right: 4rem;
-
+                
                 @media screen and (max-width: 768px) {
                     padding-right: 1rem;
                 }
                 li{
                     color: rgb(180,180,180);
+                    margin: -3px 0;
                     &::before{
                         content: ">";
                         color: #C57B57;
@@ -107,4 +109,5 @@
             }
         }
     }
+}
 </style>

@@ -17,7 +17,7 @@
 </script>
 
 
-<div>
+<main>
     <div class="section-head"> 
         <h3><span>02.</span> Where I've worked</h3>
         <svg>
@@ -71,11 +71,15 @@
         </div>
         
     </div>
-</div>
+</main>
 
 <style lang="scss">
     :root {
         --tab-height: 4rem;
+    }
+
+    main{
+        animation: fade 1s linear;
     }
 
     .job-section {
@@ -94,7 +98,7 @@
                 width: 1rem;
                 
                 #bar {
-                    width: 5px;
+                    width: 7px;
                     height: 11rem;
                 }
                 
@@ -111,12 +115,12 @@
             }
             
             .options {
-                display: flex;
+            display: flex;
             flex-direction: column;
             justify-content: space-between;
             margin-left: 0.5rem;
-            padding: 0.5rem 0;
-            height: auto;
+            padding: 0.6rem 0;
+            height: 11rem;
             button {
                 width: 5rem;
                 border: none;
@@ -155,7 +159,6 @@
             h3 {
                 color: rgb(200,200,200);
                 font-size: 1.5rem;
-                font-weight: 600;
                 margin-bottom: 0rem;
                 span {
                     font-size: 1.25rem;
@@ -176,11 +179,16 @@
                     padding-right: 1rem;
                 }
                 li{
+                    position: relative;
                     color: rgb(180,180,180);
+                    max-width: 700px;
+                    padding-bottom: 0.5rem;
+                    margin-left: 1rem;
                     &::before{
                         content: ">";
+                        position: absolute;
                         color: #C57B57;
-                        margin-right: 0.5rem;
+                        left: -1rem;
                     }
                 }
             }

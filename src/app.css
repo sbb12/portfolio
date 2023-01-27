@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/fonts/Roboto-Light.ttf') format('truetype');
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 body {
@@ -22,14 +22,14 @@ h1 {
     font-size: 4rem;
     font-style: normal;
     letter-spacing: 0.2rem;
-    font-weight: 600;
+    font-weight: 400;
     margin: 1.5rem 0;
 }
 
 h3 {
     color: rgb(200,200,200);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 1.5rem;
 }
 
@@ -37,16 +37,15 @@ p {
     font-size: 1.2rem;  
     line-height: 125%;            
     color: rgb(180, 180, 180);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p span {
     color: #C57B57;
 }
 
-a {
 
-}
+
 
 .section-head{
     display: flex;
@@ -82,3 +81,10 @@ knob.BFI{
 knob.Misc{
     transform: translate(-2px, calc(0.35rem + 2 * var(--tab-height)))
 }
+
+@keyframes fade {
+    0% { opacity: 0 }
+    10% { opacity: 0 }
+    80% { opacity: 0.9 }
+    100% { opacity: 1 }
+} 

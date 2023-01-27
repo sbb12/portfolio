@@ -1,46 +1,70 @@
 <script lang="ts">
-    import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
     import { thisPage } from '../../stores';
     import AnimatedBurger from './AnimatedBurger.svelte';
 
     export let open: boolean = false;
     let innerWidth: number = 0;
-    $: mobileView = innerWidth <= 768;
+    $: mobileView = innerWidth <= 836;
     mobileView = false;
 
+    let document: Document;
+    let navEl: HTMLElement;
     let olEl: HTMLElement;
     let overlayEl: HTMLElement;
+
+    let scrollY: number;
 
     $: { mobileView; resize(); }
     $: { open; resetOverlay(); }
 
+    // hide the nav and overlay when the window is resized
     function resize() {
         if (olEl && overlayEl) {
             open = false;
-            olEl.style.display = mobileView ? 'none' : 'flex'            
+            olEl.style.display = mobileView ? 'none' : 'flex'     
+            navEl.style.top = '0rem'       
         };
         if (overlayEl && !open){
             overlayEl.style.display = 'none'
+            navEl.style.top = '0rem' 
         }
     }
 
+    // force hide the overlay when the nav is closed
     function resetOverlay(){
         if ( overlayEl && !open){
             overlayEl.style.display = 'none'
         }
     }
 
+    // nav menu toggle for mobile
     export let onClick = (): void => {
         open = !open
         olEl.style.display = open ? 'flex' : 'none'
         overlayEl.style.display = open ? 'block' : 'none'
-    }      
+    }   
+    
+    // hide the nav when scrolling down
+    function scrollVis(e: WheelEvent){
+        if (document && navEl && !mobileView){
+            if ((document.body.scrollHeight > window.innerHeight) && e.deltaY > 0){
+                navEl.style.top = '-10rem'
+            } else {
+                navEl.style.top = '0rem'
+            }
+        }
+    }
+
+    onMount(() => {
+        document = window.document;
+    });
 
 </script>
 
-<svelte:window bind:innerWidth />
-<overlay bind:this={overlayEl}></overlay>
-<nav>
+<svelte:window bind:innerWidth bind:scrollY on:mousewheel={scrollVis}/>
+<overlay bind:this={overlayEl} on:click={onClick} on:keypress={onClick}></overlay>
+<nav bind:this={navEl} class:scrolling={scrollY > 0}>
     <a href="/">
         <img src="/logo.svg" alt="logo" class="h-14"/>
     </a>
@@ -50,7 +74,7 @@
         <AnimatedBurger {open} {onClick}/>
     {/if}
 
-    <ol bind:this={olEl} transition:fly={{ y: 200, duration: 2000 }}>
+    <ol bind:this={olEl}>
         <li class:current={$thisPage === 'about'}>
             <a href="/about">
                 <span>01.</span> About
@@ -94,18 +118,40 @@
         display: none;
         transition: display 1s ease-in-out;
     }
+
+    :global() {
+            nav.scrolling{
+                background: #0f252ffa;
+                padding: 1rem 3rem;
+                box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+
+                @media screen and (max-width: 768px) {
+                    padding: 1rem 1rem;
+                }
+            }
+    }
     
     nav {
+
+        position: fixed;
+        top: 0rem;
+        left: 0;
+        z-index: 20;
+
         color: #FAF6EF;
         font-weight: 300;
         width: 100%;
 
-        padding: 2rem 3rem 0rem;
+        padding: 2rem 3rem;
 
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        backdrop-filter: blur(4px);
+        transition: all 0.5s ease-in-out;
+
 
         @media screen and (max-width: 768px) {
             padding: 1rem 1rem;
