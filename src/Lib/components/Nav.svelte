@@ -56,14 +56,28 @@
         }
     }
 
+    // hide the nav and overlay when a link is pressed
+    function navReset(e: Event){
+        if (e.type === 'keydown' && e.key !== 'Enter') return;
+
+        open = false;
+        olEl.style.display = 'none'
+        overlayEl.style.display = 'none'
+        navEl.style.top = '0rem'
+    }
+
     onMount(() => {
         document = window.document;
     });
 
 </script>
 
+
+
 <svelte:window bind:innerWidth bind:scrollY on:mousewheel={scrollVis}/>
+
 <overlay bind:this={overlayEl} on:click={onClick} on:keypress={onClick}></overlay>
+
 <nav bind:this={navEl} class:scrolling={scrollY > 0}>
     <a href="/">
         <img src="/logo.svg" alt="logo" class="h-14"/>
@@ -76,22 +90,22 @@
 
     <ol bind:this={olEl}>
         <li class:current={$thisPage === 'about'}>
-            <a href="/about">
+            <a href="/about" on:click={navReset} on:keydown={navReset}>
                 <span>01.</span> About
             </a>
         </li>
         <li class:current={$thisPage === 'experience'}>
-            <a href="/experience">
+            <a href="/experience" on:click={navReset} on:keydown={navReset}>
                 <span>02.</span> Experience
             </a>
         </li>
         <li class:current={$thisPage === 'work'}>
-            <a href="/work">
+            <a href="/work" on:click={navReset} on:keydown={navReset}>
                 <span>03.</span> Work
             </a>
         </li>
         <li class:current={$thisPage === 'contact'}>
-            <a href="/contact">
+            <a href="/contact" on:click={navReset} on:keydown={navReset}>
                 <span>04.</span> Contact
             </a>
         </li>
@@ -132,7 +146,7 @@
     }
     
     nav {
-
+        
         position: fixed;
         top: 0rem;
         left: 0;
@@ -180,8 +194,8 @@
                 right: 0;
                 flex-direction: column;
                 justify-content: center;
-                background-color: #16333F;
-
+                background-color: #0f252ffa;
+                box-shadow: 0 0 10px 0 rgba(0 ,0 , 0, 0.5);
                 
             }
             
@@ -225,9 +239,9 @@
             padding: 1rem 1.5rem;
             background-color: transparent;
             color: #C57B57;
-            :hover {
-                background-color: #C57B57;
-                color: #FAF6EF;
+            transition: all 0.1s ease-in-out;
+            &:hover {
+                background-color: #C57B5722;
             }
         }
     }
