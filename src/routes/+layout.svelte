@@ -23,17 +23,17 @@
         display: flex;
         align-items: flex-start;
         margin: auto;
-        margin-top: 16rem;
+        margin-top: 20rem;
 
 
         @media screen and (max-width: 1920px) {
             max-width: 1200px;
-            margin-top: 12rem;
+            margin-top: 18rem;
         }
 
         @media screen and (max-width: 1600px) {
             max-width: 1000px;
-            margin-top: 12rem;
+            margin-top: 16rem;
         }
 
         @media screen and (max-width: 1200px) {

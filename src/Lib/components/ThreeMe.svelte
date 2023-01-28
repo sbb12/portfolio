@@ -23,17 +23,16 @@
             antialias: true
         })
         renderer.setSize(800, 400)
-        renderer.shadowMap.enabled = false
+        renderer.shadowMap.enabled = true
         renderer.shadowMap.type = THREE.BasicShadowMap
-        // renderer.shadowMap.type = THREE.PCFSoftShadowMap
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap
         
         
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
         camera.position.z = 5
         camera.position.y = 1;
-        const cameratarget = new THREE.Vector3(10, 100, 10)
-        camera.lookAt(cameratarget);
-        
+        const cameraTarget = new THREE.Vector3(10, 100, 10)
+        camera.lookAt(cameraTarget);
 
         controls = new OrbitControls( camera, renderer.domElement );        
 
@@ -41,30 +40,34 @@
         hemisphereLight.position.set(1, 1, 1)
         scene.add(hemisphereLight)
 
-        const directionalLight1 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
-        directionalLight1.position.set(-20, 100, -10)
+        const atmosphereLight = new THREE.AmbientLight(0xffffff, 0.8)
+        scene.add(atmosphereLight)
+
+        const directionalLight1 = new THREE.DirectionalLight(0xaaaaaa, 1.0);
+        directionalLight1.position.set(20, 20, 10)
         directionalLight1.target.position.set(0, 0, 0)
         directionalLight1.castShadow = true;
-        directionalLight1.shadow.mapSize.width = 2048;
-        directionalLight1.shadow.mapSize.height = 2048;
+        // directionalLight1.shadow.mapSize.width = 2048;
+        // directionalLight1.shadow.mapSize.height = 2048;
 
         scene.add(directionalLight1)
 
         const floor = new THREE.Mesh(
             new THREE.PlaneGeometry(100, 100),
             new THREE.MeshStandardMaterial({ 
-                color: 0xffffff, 
+                color: 0x142B34, 
                 transparent: true,
             })
         );
 
         floor.rotation.x = -Math.PI / 2;
-        floor.castShadow = false;
+        floor.castShadow = true;
         floor.receiveShadow = true;
-        // scene.add(floor);
+        floor.position.set(0, -1.5, 0)
+        scene.add(floor);
 
         const loader = new GLTFLoader()
-        loader.load('/src/Lib/Three/surge.glb', (gltf) => {
+        loader.load('/src/Lib/Three/surge2.glb', (gltf) => {
             console.log(gltf)
 
             model = gltf.scene;
@@ -74,8 +77,13 @@
             model.rotation.y = -3;
             model.castShadow = true;
             model.receiveShadow = true;
-            
 
+            model.traverse((o) => {
+                if (o.isMesh) {
+                    o.castShadow = true;
+                    o.receiveShadow = true;
+                }
+            });
 
             scene.add(model);
 

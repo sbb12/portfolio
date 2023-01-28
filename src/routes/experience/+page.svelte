@@ -1,7 +1,5 @@
 <script lang="ts">
 
-    import {onMount} from 'svelte';
-
     let knobEl: HTMLElement;
     let selected: string = 'EMG';
    
@@ -80,6 +78,7 @@
 
     main{
         animation: fade 1s linear;
+        margin: 0 auto;
     }
 
     .job-section {
@@ -143,6 +142,11 @@
             display: none;
             opacity: 1;
             margin-left: 2rem;
+
+            @media screen and (max-width: 768px) {
+                margin-left: 0rem;
+                
+            }
             
             &.current {
                 display: block;

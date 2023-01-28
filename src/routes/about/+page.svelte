@@ -49,6 +49,7 @@
 
 <style lang="scss">
     main {
+        margin: 0 auto;
         animation: fade 1s linear;
         left{
             display: flex;

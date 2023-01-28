@@ -115,6 +115,7 @@
 <style lang="scss">
     main{
         animation: fade 1s linear;
+        margin: auto;
 
         project {
             display: flex;

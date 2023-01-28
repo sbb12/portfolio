@@ -30,7 +30,7 @@
     </svg>
 </button>
   
-    <style lang="scss">
+<style lang="scss">
         :root {
         --transition-duration: 400ms;
     }
