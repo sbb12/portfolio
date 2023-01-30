@@ -11,9 +11,8 @@
         <h1>Sercan Sokmen</h1>
         <h3>Web Developer</h3>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nihil debitis ab dignissimos ad, 
-            optio officia placeat fuga impedit odio et iusto nulla itaque dolorem aperiam quod? Reiciendis
-            id nesciunt at quas laboriosam harum magnam natus repellendus deserunt! Iste, placeat?
+            I am a web developer with a passion for creating beautiful and functional websites. 
+            
         </p>    
     </left>
     <ThreeMe />

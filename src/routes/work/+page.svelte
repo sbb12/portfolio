@@ -1,17 +1,12 @@
 <script lang="ts">
+    import SectionHead from '../../Lib/components/SectionHead.svelte';
     import { thisPage } from '/src/stores';
     $thisPage = 'work';
 
 </script>
 
 <main>
-    
-    <div class="section-head"> 
-        <h3><span>03.</span> Things I've built</h3>
-        <svg>
-            <line x1="0" y1="0" x2="100%" y2="0" stroke='#D9D9D9' stroke-width="1"/>
-        </svg>
-    </div>
+    <SectionHead num={'03'} title={"things I've built"} />
     
     <project class="right">
         <a href="" class="img-link">

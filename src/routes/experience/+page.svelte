@@ -1,5 +1,6 @@
 <script lang="ts">
 
+    import SectionHead from '../../Lib/components/SectionHead.svelte';
     import { thisPage } from '/src/stores';
     $thisPage = 'experience';
 
@@ -19,12 +20,7 @@
 
 
 <main>
-    <div class="section-head"> 
-        <h3><span>02.</span> Where I've worked</h3>
-        <svg>
-            <line x1="0" y1="0" x2="100%" y2="0" stroke='#D9D9D9' stroke-width="1"/>
-        </svg>
-    </div>
+    <SectionHead num={'02'} title={"Where I've worked"} />
     <div class="job-section">
         <div class="selector">
             <div class="selector-bar">

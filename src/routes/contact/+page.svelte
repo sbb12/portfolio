@@ -1,15 +1,11 @@
 <script lang="ts">
+    import SectionHead from '../../Lib/components/SectionHead.svelte';
     import { thisPage } from '/src/stores';
     $thisPage = 'contact';
 </script>
 
 <main>
-    <div class="section-head"> 
-        <h3><span>04.</span> So, what's next?</h3>
-        <svg>
-            <line x1="0" y1="0" x2="100%" y2="0" stroke='#D9D9D9' stroke-width="1"/>
-        </svg>
-    </div>
+    <SectionHead num={'04'} title={"So, what's next?"} />
 
     <h1>Get In Touch</h1>
 

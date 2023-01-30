@@ -47,30 +47,7 @@ p span {
 
 
 
-.section-head{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 25rem;
-    max-width: 100%;
-    padding: 0 0 1rem 0;    
-}
 
-.section-head h3{
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    
-}
-.section-head h3 span {
-    color: #C57B57;
-}
-
-.section-head svg{
-    margin-left: 1rem;
-    width: 25rem;
-    height: 1px;
-}
 
 knob.EMG{
     transform: translate(-2px, calc(0.35rem + 0 * var(--tab-height)))

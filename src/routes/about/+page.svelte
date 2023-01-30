@@ -1,20 +1,24 @@
 <script>
     import { thisPage } from '/src/stores';
+    import SectionHead from '../../Lib/components/SectionHead.svelte';
     $thisPage = 'about';
 
 </script>
 
 <main>
     <left>
-        <div class="section-head"> 
-            <h3><span>01.</span> About</h3>
-            <svg>
-                <line x1="0" y1="0" x2="100%" y2="0" stroke='#D9D9D9' stroke-width="1"/>
-            </svg>
-        </div>
+        <SectionHead num={'01'} title='About' />
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro officia quaerat exercitationem ducimus ad dolorum velit quae quasi, fugit hic reiciendis, dicta sequi nemo dignissimos dolorem non adipisci iste earum inventore ipsam, repudiandae ut eius. Aliquid praesentium voluptatem debitis culpa. Adipisci recusandae quasi modi officia velit ad quaerat nisi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro officia quaerat exercitationem ducimus ad dolorum velit quae quasi, fugit hic reiciendis, dicta sequi nemo dignissimos dolorem non adipisci iste earum inventore ipsam, repudiandae ut eius. Aliquid praesentium voluptatem debitis culpa. Adipisci recusandae quasi modi officia velit ad quaerat nisi.</p>
+        <p> 
+            My name is Sercan and i really enjoy building things. As a kid i was always interested in how things worked and would take them apart to see how they worked.
+            I began tinkering with Arduinos and Raspberry Pi's and found that coding was the ultimate sandbox for me to create whatever idea popped into my head.
+            It was only a hobby at first but i decided to pursue it as a career in 2021 when i began self-teaching myself web development. 
+        </p>
+
+        <p>
+            Today, i have over a year of professional experience in web development with a focus on php back-end and i am always looking for new opportunities to learn and grow.
+        </p>
+
 
         <div>
             <p class="tech-stack">Tech Stack:</p>
@@ -97,7 +101,7 @@
                 padding-right: 4rem;
                 
                 @media screen and (max-width: 768px) {
-                    padding-right: 1rem;
+                    padding-right: 2rem;
                 }
                 li{
                     color: rgb(180,180,180);
