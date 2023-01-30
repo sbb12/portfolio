@@ -1,5 +1,6 @@
 <script lang="ts">
-
+    import { thisPage } from '/src/stores';
+    $thisPage = 'contact';
 </script>
 
 <main>
@@ -29,7 +30,7 @@
 
     main{
         margin: 0 auto;        
-        
+
         .contact-btn, .email-div {
             width: 100%;
             display: flex;

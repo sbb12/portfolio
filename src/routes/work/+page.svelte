@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { thisPage } from '/src/stores';
+    $thisPage = 'work';
 
 </script>
 

@@ -42,7 +42,7 @@
          
         @media screen and (max-width: 768px) {
             padding: 3rem 2rem;
-            margin-top: 4rem;
+            margin-top: 8rem;
         }
 
         

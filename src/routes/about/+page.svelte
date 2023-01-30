@@ -1,5 +1,6 @@
-
 <script>
+    import { thisPage } from '/src/stores';
+    $thisPage = 'about';
 
 </script>
 

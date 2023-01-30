@@ -1,5 +1,8 @@
 <script lang="ts">
 
+    import { thisPage } from '/src/stores';
+    $thisPage = 'experience';
+
     let knobEl: HTMLElement;
     let selected: string = 'EMG';
    

@@ -13,39 +13,36 @@
     let olEl: HTMLElement;
     let overlayEl: HTMLElement;
 
+
     let scrollY: number;
 
-    $: { mobileView; resize(); }
-    $: { open; resetOverlay(); }
+    $: { open; toggleOpen(); }
+    $: { mobileView; toggleMobileView()}
 
-    // hide the nav and overlay when the window is resized
-    function resize() {
-        if (olEl && overlayEl) {
-            open = false;
-            olEl.style.display = mobileView ? 'none' : 'flex'     
-            navEl.style.top = '0rem'       
-        };
-        if (overlayEl && !open){
-            overlayEl.style.display = 'none'
-            navEl.style.top = '0rem' 
+
+    // show/hide nav and overlay when 'open' changes
+    function toggleOpen(){
+        if (navEl){
+            olEl.style.display = open ? 'flex' : 'none'
+            overlayEl.style.display = open ? 'block' : 'none'
         }
     }
 
-    // force hide the overlay when the nav is closed
-    function resetOverlay(){
-        if ( overlayEl && !open){
+    // if page size changes, reset nav options
+    function toggleMobileView(){
+        if ( navEl ){
+            open = false
             overlayEl.style.display = 'none'
+            olEl.style.display = mobileView ? 'none' : 'flex'
+            navEl.style.top =  '0rem'
+            
         }
     }
 
-    // nav menu toggle for mobile
     export let onClick = (): void => {
         open = !open
-        olEl.style.display = open ? 'flex' : 'none'
-        overlayEl.style.display = open ? 'block' : 'none'
     }   
     
-    // hide the nav when scrolling down
     function scrollVis(e: WheelEvent){
         if (document && navEl && !mobileView){
             if ((document.body.scrollHeight > window.innerHeight) && e.deltaY > 0){
@@ -57,13 +54,12 @@
     }
 
     // hide the nav and overlay when a link is pressed
-    function navReset(e: Event){
-        if (e.type === 'keydown' && e.key !== 'Enter') return;
-
-        open = false;
-        olEl.style.display = 'none'
-        overlayEl.style.display = 'none'
+    function navReset(e: Event|null = null){
+        if (e?.type === 'keydown' && e?.key !== 'Enter') return;        
+        open = false
         navEl.style.top = '0rem'
+        olEl.style.display ='flex' 
+        overlayEl.style.display ='none'
     }
 
     onMount(() => {
@@ -89,24 +85,24 @@
     {/if}
 
     <ol bind:this={olEl}>
-        <li class:current={$thisPage === 'about'}>
+        <li>
             <a href="/about" on:click={navReset} on:keydown={navReset}>
-                <span>01.</span> About
+                <span class:current={$thisPage === 'about'}>01.</span> About
             </a>
         </li>
-        <li class:current={$thisPage === 'experience'}>
+        <li>
             <a href="/experience" on:click={navReset} on:keydown={navReset}>
-                <span>02.</span> Experience
+                <span class:current={$thisPage === 'experience'}>02.</span> Experience
             </a>
         </li>
-        <li class:current={$thisPage === 'work'}>
+        <li>
             <a href="/work" on:click={navReset} on:keydown={navReset}>
-                <span>03.</span> Work
+                <span class:current={$thisPage === 'work'}>03.</span> Work
             </a>
         </li>
-        <li class:current={$thisPage === 'contact'}>
+        <li>
             <a href="/contact" on:click={navReset} on:keydown={navReset}>
-                <span>04.</span> Contact
+                <span class:current={$thisPage === 'contact'}>04.</span> Contact
             </a>
         </li>
         <li>
@@ -139,7 +135,7 @@
                 padding: 1rem 3rem;
                 box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 836px) {
                     padding: 1rem 1rem;
                 }
             }
@@ -167,7 +163,7 @@
         transition: all 0.5s ease-in-out;
 
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 836px) {
             padding: 1rem 1rem;
         }
 
@@ -183,7 +179,7 @@
 
             z-index: 10;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 836px) {
                 display: none;
                 height: 100vh;
                 width: 50vw;
@@ -204,7 +200,7 @@
                 margin: 0 0 0 4rem;
                 color: rgb(210, 210, 210);
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 836px) {
                     margin: 2rem 0;
                 }
                 
@@ -225,6 +221,15 @@
                     span {
                         font-weight: 400;
                         color: #C57B57;
+
+                        &.current {
+                            border-bottom: #C57B57 1px solid;
+
+                            @media screen and (max-width: 836px) {
+                                border-bottom: none;
+                                
+                            }
+                        }
                     }
                     
                         
