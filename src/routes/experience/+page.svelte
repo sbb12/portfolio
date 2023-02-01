@@ -1,8 +1,7 @@
 <script lang="ts">
-
+    import { thisPage } from '../../stores';
     import SectionHead from '../../Lib/components/SectionHead.svelte';
     import NextButton from '../../Lib/components/NextButton.svelte';
-    import { thisPage } from '/src/stores';
     $thisPage = 'experience';
 
     let knobEl: HTMLElement;

@@ -1,6 +1,7 @@
 <script lang="ts">
+    import { thisPage } from '../../stores';
     import SectionHead from '../../Lib/components/SectionHead.svelte';
-    import { thisPage } from '/src/stores';
+
     $thisPage = 'contact';
 </script>
 
@@ -26,6 +27,8 @@
 
     main{
         margin: 0 auto;        
+
+        animation: fade 1s ease-in-out;
 
         .contact-btn, .email-div {
             width: 100%;

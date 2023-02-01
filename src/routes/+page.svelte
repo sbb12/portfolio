@@ -1,7 +1,9 @@
 <script lang="ts">
-    import ThreeMe from '../Lib/components/ThreeMe.svelte';
+    // import ThreeMe from '../Lib/components/ThreeMe.svelte';
     import NextButton from '../Lib/components/NextButton.svelte';
-    import { thisPage } from '/src/stores';
+    const threePromise = import('../Lib/components/ThreeMe.svelte')
+    import { thisPage } from '../stores';
+	import { LoadingManager } from 'three';
     $thisPage = 'home';
 </script>
 
@@ -15,8 +17,13 @@
             I'm a web developer with a passion for technology, problem solving and creating beautiful and functional websites. 
         </p>    
     </left>
-    <ThreeMe />
+    {#await threePromise}
+        <div style="width=500; height=400;"></div>
+    {:then {default: ThreeMe}}
+        <ThreeMe />
+    {/await}
 </main>
+
 
 <NextButton to={"about"} title={"About"}/>
 

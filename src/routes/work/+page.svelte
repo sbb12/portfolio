@@ -1,6 +1,6 @@
 <script lang="ts">
+    import { thisPage } from '../../stores';
     import SectionHead from '../../Lib/components/SectionHead.svelte';
-    import { thisPage } from '/src/stores';
     $thisPage = 'work';
 
 </script>

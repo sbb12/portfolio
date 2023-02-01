@@ -1,5 +1,5 @@
 <script>
-    import { thisPage } from '/src/stores';
+    import { thisPage } from '../../stores';
     import SectionHead from '../../Lib/components/SectionHead.svelte';
     import NextButton from '../../Lib/components/NextButton.svelte';
     $thisPage = 'about';

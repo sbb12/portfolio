@@ -76,7 +76,7 @@
 
 <nav bind:this={navEl} class:scrolling={scrollY > 0}>
     <a href="/">
-        <img src="/logo.svg" alt="logo" class="h-14"/>
+        <img src="/logo.svg" alt="logo"/>
     </a>
 
 
@@ -169,6 +169,7 @@
 
         img {
             z-index: 20;
+            height: 3.5rem;
         }
         
         

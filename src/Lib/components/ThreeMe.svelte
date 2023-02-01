@@ -7,8 +7,6 @@
     let canvasEl: HTMLCanvasElement;
     let renderer: THREE.WebGLRenderer;
     let camera: THREE.PerspectiveCamera;
-    
-    
 
     function loadThree(canvasEl: HTMLCanvasElement){
 
@@ -66,7 +64,8 @@
         scene.add(floor);
 
         const loader = new GLTFLoader()
-        loader.load('/src/Lib/Three/surge2.glb', (gltf) => {
+        // loader.load('/src/Lib/Three/surge2.glb', (gltf) => {
+        loader.load('/surge2.glb', (gltf) => {
 
             model = gltf.scene;
 
@@ -128,6 +127,11 @@
 
 </script>
 
-<canvas bind:this={canvasEl}>
+<canvas bind:this={canvasEl}></canvas>
 
-</canvas>
+
+<style>
+    canvas {
+        animation: fade 1s linear;
+    }
+</style>
