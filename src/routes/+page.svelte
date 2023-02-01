@@ -1,5 +1,6 @@
 <script lang="ts">
     import ThreeMe from '../Lib/components/ThreeMe.svelte';
+    import NextButton from '../Lib/components/NextButton.svelte';
     import { thisPage } from '/src/stores';
     $thisPage = 'home';
 </script>
@@ -9,14 +10,15 @@
     <left>
         <h4>Hello!</h4>
         <h1>Sercan Sokmen</h1>
-        <h3>Web Developer</h3>
+        <h3>I build things for the web</h3>
         <p>
-            I am a web developer with a passion for creating beautiful and functional websites. 
-            
+            I'm a web developer with a passion for technology, problem solving and creating beautiful and functional websites. 
         </p>    
     </left>
     <ThreeMe />
 </main>
+
+<NextButton to={"about"} title={"About"}/>
 
 <style lang="scss">
     

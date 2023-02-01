@@ -1,6 +1,7 @@
 <script>
     import { thisPage } from '/src/stores';
     import SectionHead from '../../Lib/components/SectionHead.svelte';
+    import NextButton from '../../Lib/components/NextButton.svelte';
     $thisPage = 'about';
 
 </script>
@@ -16,7 +17,7 @@
         </p>
 
         <p>
-            Today, i have over a year of professional experience in web development with a focus on php back-end and i am always looking for new opportunities to learn and grow.
+            Today, i have over a year of professional work experience in web development with a focus on php back-end and i am always looking for new opportunities to learn and grow.            
         </p>
 
 
@@ -50,13 +51,13 @@
         <!-- <img src="placeholder" alt="extremely handsome man"/> -->
     </right>
 </main>
-
+<NextButton to={"experience"} title={"Experience"}/>
 
 <style lang="scss">
     main {
         margin: 0 auto;
         animation: fade 1s linear;
-        left{
+        left {
             display: flex;
             flex-direction: column;
             
@@ -64,56 +65,34 @@
                 padding: 1rem 0;
             }
             
-            .section-head{
-                display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 25rem;
-            max-width: 100%;
-
-            h3{
-                white-space: nowrap;
-                margin: 0;
-                padding: 0;
-                span {
-                    color: #C57B57;
-                }
-            }
-            
-            svg{
-                margin-left: 1rem;
-                width: 25rem;
-                height: 1px;
-            }
-        }
         
-        .tech-stack{
-            color: rgb(230,230,230);
-        }
-        .stacks {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            max-width: 100%;
-            
-            ol{
-                list-style: none;
-                padding-right: 4rem;
+            .tech-stack{
+                color: rgb(230,230,230);
+            }
+            .stacks {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                max-width: 100%;
                 
-                @media screen and (max-width: 768px) {
-                    padding-right: 2rem;
-                }
-                li{
-                    color: rgb(180,180,180);
-                    margin: -3px 0;
-                    &::before{
-                        content: ">";
-                        color: #C57B57;
-                        margin-right: 0.5rem;
+                ol{
+                    list-style: none;
+                    padding-right: 4rem;
+                    
+                    @media screen and (max-width: 768px) {
+                        padding-right: 2rem;
+                    }
+                    li{
+                        color: rgb(180,180,180);
+                        margin: -3px 0;
+                        &::before{
+                            content: ">";
+                            color: #C57B57;
+                            margin-right: 0.5rem;
+                        }
                     }
                 }
             }
         }
     }
-}
 </style>

@@ -2,7 +2,6 @@
     import Nav from '../Lib/components/Nav.svelte';
     import Footer from '../Lib/components/Footer.svelte';
     import '../app.css'
-
 </script>
 
 <Nav />
@@ -21,6 +20,7 @@
         max-width: 1600px; 
         
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         margin: auto;
         margin-top: 20rem;

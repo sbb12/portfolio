@@ -1,6 +1,7 @@
 <script lang="ts">
 
     import SectionHead from '../../Lib/components/SectionHead.svelte';
+    import NextButton from '../../Lib/components/NextButton.svelte';
     import { thisPage } from '/src/stores';
     $thisPage = 'experience';
 
@@ -42,33 +43,36 @@
                 <h3>Developer <a href="https://uk.emglive.com/"><span>@ EMG</span></a></h3> 
                 <h5>September 2022 - December 2022</h5>
                 <ol>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas, vel voluptate adipisci doloribus pariatur facere dolorum. Explicabo, cumque voluptates.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, impedit!</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at molestias, illo aut quam voluptate.</li>
+                    <li>Fixed term contract to develop and build from the ground up a crew time tracking portal using Laravel as well as maintain and optimise the previous system.</li>
+                    <li>Write modern, performant and maintainable PHP and TypeScript code with clear documentation.</li>
+                    <li>Integrate with multiple SQL databases, redis cache and worker processes hosted on heroku.</li>
+                    <li>Front end built with HTML, CSS and TypeScript.</li>
                 </ol>
             </div>
             <div class="job-details" class:current={selected === 'BFI'}>
                 <h3>Junior Developer <a href="https://www.wearebfi.co.uk/"><span>@ BFI - Big Fish Internet</span></a></h3> 
                 <h5>July 2021 -  September 2022</h5>
                 <ol>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas, vel voluptate adipisci doloribus pariatur facere dolorum. Explicabo, cumque voluptates.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, impedit!</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at molestias, illo aut quam voluptate.</li>
+                    <li>Maintained and built features for clients primarily using HTML, CSS, JavaScript and JQuery.</li>
+                    <li>Provide support for WordPress sites including plugin integrations, functional builds, template modifications and development of custom features.</li>
+                    <li>Built from the ground up standalone high traffic sites for Vision express for their customer appointment amendments web app and friend referral scheme. </li>
+                    <li>Mostly back end work on the LAMP tech stack, split between WordPress and MVC frameworks like CodIgniter.</li>
+                    <li>Learned many aspects of web development such as DNS management, cloud hosting and even picked up PERL to maintain some of the more legacy sites.</li>
                 </ol>
             </div>
             <div class="job-details" class:current={selected === 'Misc'}>
-                <h3>Junior Developer <span>@ BFI - Big Fish Internet</span></h3> 
-                <h5>July 2021 -  September 2022</h5>
+                <h3>Previous non-development work experience</h3> 
+                <h5>Up till July 2021</h5>
                 <ol>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas, vel voluptate adipisci doloribus pariatur facere dolorum. Explicabo, cumque voluptates.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, impedit!</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at molestias, illo aut quam voluptate.</li>
+                    <li>Before begging to my career as a developer, i studied mechanical engineering at sussex university and then mainly worked in the customer service industry</li>
                 </ol>
             </div>
         </div>
         
     </div>
 </main>
+
+<NextButton to={"work"} title={"Works"}/>
 
 <style lang="scss">
     :root {

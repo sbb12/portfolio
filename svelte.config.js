@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
+
 // import { vitePreprocess } from '@sveltejs/kit/vite';
 import preprocess  from 'svelte-preprocess';
 
@@ -9,7 +10,15 @@ const config = {
 	preprocess: preprocess ({}),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(
+			// {
+			// 	pages: 'build',
+			// 	assets: 'build',
+			// 	fallback: null,
+			// 	precompress: false,
+			// 	strict: true
+			// }
+		)
 	}
 };
 
