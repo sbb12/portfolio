@@ -26,7 +26,8 @@
 <style lang="scss">
 
     main{
-        margin: 0 auto;        
+        margin: 0 auto;   
+        max-width: 1000px;     
 
         animation: fade 1s ease-in-out;
 

@@ -24,6 +24,7 @@
         align-items: flex-start;
         margin: auto;
         margin-top: 20rem;
+        z-index: 10;
 
 
         @media screen and (max-width: 1920px) {
@@ -37,13 +38,24 @@
         }
 
         @media screen and (max-width: 1200px) {
-            max-width: 600px;
+            padding: 0 2rem;
+            width: calc(100vw - 4rem);
+
+        }
+
+        @media screen and (max-width: 836px) {
+            padding: 0 1rem;
+            width: calc(100vw - 2rem);
+            margin-top: 10rem;
         }
          
-        @media screen and (max-width: 768px) {
-            padding: 3rem 2rem;
-            margin-top: 8rem;
+        @media screen and (max-width: 500px) {
+            padding: 2rem 1rem;
+            width: calc(100vw - 2rem);
+            margin-top: 6rem;
         }
+
+        
 
         
     }

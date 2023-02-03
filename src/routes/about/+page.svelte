@@ -60,6 +60,8 @@
         left {
             display: flex;
             flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
             
             .tech-stack, p{
                 padding: 1rem 0;
@@ -91,6 +93,16 @@
                             margin-right: 0.5rem;
                         }
                     }
+                }
+
+                @media screen and (max-width: 420px) {
+                    // flex-direction: column;
+                    
+                    ol {
+                        padding-top: 1rem;
+                    }
+
+                    
                 }
             }
         }

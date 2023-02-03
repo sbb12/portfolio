@@ -24,7 +24,7 @@
         
         svg{
             margin-left: 1rem;
-            width: 25rem;
+            max-width: 25rem;
             height: 1px;
         }
 
@@ -37,6 +37,10 @@
                 color: #C57B57;
             }
             
+        }
+        p {
+            margin: 0;
+            padding: 0;
         }
 
     }

@@ -1,7 +1,7 @@
 <script lang="ts">
-    // import ThreeMe from '../Lib/components/ThreeMe.svelte';
+    import ThreeMe from '../Lib/components/ThreeMe.svelte';
     import NextButton from '../Lib/components/NextButton.svelte';
-    const threePromise = import('../Lib/components/ThreeMe.svelte')
+    // const threePromise = import('../Lib/components/ThreeMe.svelte')
     import { thisPage } from '../stores';
 	import { LoadingManager } from 'three';
     $thisPage = 'home';
@@ -12,16 +12,16 @@
     <left>
         <h4>Hello!</h4>
         <h1>Sercan Sokmen</h1>
-        <h3>I build things for the web</h3>
+        <!-- <h3>I build things for the web</h3> -->
         <p>
-            I'm a web developer with a passion for technology, problem solving and creating beautiful and functional websites. 
+            I'm a web developer with a passion for technology, problem solving and creating things for the web. 
         </p>    
     </left>
-    {#await threePromise}
-        <div style="width=500; height=400;"></div>
-    {:then {default: ThreeMe}}
+    <!-- {#await threePromise} -->
+        <!-- <div style="width=500; height=400;"></div> -->
+    <!-- {:then {default: ThreeMe}} -->
         <ThreeMe />
-    {/await}
+    <!-- {/await} -->
 </main>
 
 
@@ -29,15 +29,19 @@
 
 <style lang="scss">
     
+    :global(main){
+        width: 100%;
+        margin: 0 auto;
+        
+    }
     main {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
 
         @media screen and (max-width: 1200px) {
             flex-direction: column;
-        
-            
         }
     
         left {
@@ -48,6 +52,14 @@
             
             animation: fade 1s linear;
             
+            @media screen and (max-width: 610px) {
+                
+                h1 {
+                    line-height: 4.5rem;
+
+                }
+                
+            }
         }
     }
 </style>

@@ -11,12 +11,6 @@ body {
     background-color: #142B34;
     font: 1.2rem/1.5 'Roboto', sans-serif;
 }
-
-h4 {
-    color: #C57B57;
-    font-size: 1.1rem;
-    letter-spacing: 0.02rem;
-}
 h1 {
     color: rgb(230,230,220);
     font-size: 4rem;
@@ -31,6 +25,16 @@ h3 {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
+}
+
+h4 {
+    color: #C57B57;
+    font-size: 1.1rem;
+    letter-spacing: 0.02rem;
+}
+
+h5 {
+    font-size: 1rem;
 }
 
 p {
@@ -75,4 +79,27 @@ knob.Misc{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #C57B57;
+  }
+
+
+  @media screen and (max-width: 550px) {
+    h1 {
+        font-size: 3rem;
+        margin: 1.1rem 0;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h5{
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    ol li {
+        font-size: 1.1rem;
+    }
+    
   }

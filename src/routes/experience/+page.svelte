@@ -81,6 +81,7 @@
     main{
         animation: fade 1s linear;
         margin: 0 auto;
+        max-width: 1000px;
     }
 
     .job-section {
@@ -88,6 +89,10 @@
         display: flex;
         flex-direction: row;
         padding: 1rem;
+
+        @media screen and (max-width: 768px) {
+            padding: 0.5rem;
+        }
 
         .selector {
             
@@ -136,6 +141,10 @@
                 &.selected {
                     color: #C57B57;
                 }
+
+                @media screen and (max-width: 768px) {
+                    width: 4rem;
+                }
             }
         }
     }
@@ -173,7 +182,6 @@
                 }
             }
             h5 {
-                font-size: 1rem;
                 font-weight: 400;
                 color: #768286;
             }
@@ -187,7 +195,7 @@
                 li{
                     position: relative;
                     color: rgb(180,180,180);
-                    max-width: 700px;
+                    max-width: 900px;
                     padding-bottom: 0.5rem;
                     margin-left: 1rem;
                     &::before{

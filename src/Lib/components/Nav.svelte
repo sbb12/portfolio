@@ -44,12 +44,26 @@
     }   
     
     function scrollVis(e: WheelEvent){
-        if (document && navEl && !mobileView){
+        if (document && navEl && mobileView){
             if ((document.body.scrollHeight > window.innerHeight) && e.deltaY > 0){
                 navEl.style.top = '-10rem'
             } else {
                 navEl.style.top = '0rem'
             }
+        }
+    }
+
+    let lastScrollPos: number = 0
+    function onScroll(e: Event){
+        const currentScroll = window.scrollY;
+        
+        if (document && navEl && mobileView){
+            if ((document.body.scrollHeight > window.innerHeight) && (currentScroll > lastScrollPos)){
+                navEl.style.top = "-10rem"
+            } else {
+                navEl.style.top = '0rem'
+            }
+            lastScrollPos = currentScroll
         }
     }
 
@@ -70,7 +84,7 @@
 
 
 
-<svelte:window bind:innerWidth bind:scrollY on:mousewheel={scrollVis}/>
+<svelte:window bind:innerWidth bind:scrollY on:scroll={onScroll}/>
 
 <overlay bind:this={overlayEl} on:click={onClick} on:keypress={onClick}></overlay>
 
@@ -116,6 +130,11 @@
 
 
 <style lang="scss">
+
+    @keyframes flyIn{  
+        0%{transform: translateX(100%);}
+        100%{transform: translateX(0%);}
+    }
     overlay{
         position: fixed;
         top: 0;
@@ -151,6 +170,7 @@
         color: #FAF6EF;
         font-weight: 300;
         width: 100%;
+        // max-width: 50vw;
 
         padding: 2rem 3rem;
 
@@ -179,6 +199,7 @@
             align-items: center;
 
             z-index: 10;
+            
 
             @media screen and (max-width: 836px) {
                 display: none;
@@ -193,6 +214,8 @@
                 justify-content: center;
                 background-color: #0f252ffa;
                 box-shadow: 0 0 10px 0 rgba(0 ,0 , 0, 0.5);
+
+                animation: flyIn 0.5s ease-in-out;
                 
             }
             

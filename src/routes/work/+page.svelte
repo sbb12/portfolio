@@ -113,6 +113,8 @@
     main{
         animation: fade 1s linear;
         margin: auto;
+        width: 100%;
+        max-width: 1000px;
 
         project {
             display: flex;
