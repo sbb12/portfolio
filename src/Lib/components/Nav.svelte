@@ -146,6 +146,7 @@
         z-index: 5;
         display: none;
         transition: display 1s ease-in-out;
+       
     }
 
     :global() {
