@@ -31,7 +31,7 @@
 </left>
 
 <right>
-    <p>Sercansokmen0@gmail.com</p>
+    <a href="mailto:sercansokmen0@gmail.com">Sercansokmen0@gmail.com</a>
     <svg xmlns="http://www.w3.org/2000/svg"  width="10" height="150" fill="{color}" >
         <line x1="5" y1="0" x2="5" y2="150" stroke="{color}" stroke-width="1"/>
     </svg>
@@ -73,7 +73,7 @@
     right {
         right: 3rem;
 
-        p {
+        a {
                 color: #D9D9D9;
                 font-size: 1rem;
                 letter-spacing: 0.1rem;

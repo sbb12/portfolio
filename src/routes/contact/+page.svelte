@@ -14,11 +14,11 @@
         My inbox is always open. Whether you want to discuss an opportunity, have a question or just want to say hi, I'll try my best to get back to you!
     </p>
     <div class="contact-btn">
-        <button>Say Hello</button>
+        <a href="mailto:sercansokmen0@gmail.com"><button>Say Hello</button></a>
     </div>
 
     <div class="email-div">
-        <p>Sercansokmen0@gmail.com</p>
+        <a href="mailto:sercansokmen0@gmail.com"><p>Sercansokmen0@gmail.com</p></a>
     </div>
 
 </main>
