@@ -314,6 +314,7 @@
                     padding: 1.5rem 2rem;
                     margin-left: -5rem;
                     border-radius: 8px 0 0 8px;
+                    width: 100%;
 
                     @media screen and (max-width: 836px) {
                         margin-left: 0;
