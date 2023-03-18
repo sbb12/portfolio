@@ -11,13 +11,13 @@
         <SectionHead num={'01'} title='About' />
 
         <p> 
-            My name is Sercan and i really enjoy building things. As a kid i was always interested in how things worked and would take them apart to see how they worked.
-            I began tinkering with Arduinos and Raspberry Pi's and found that coding was the ultimate sandbox for me to create whatever idea popped into my head.
-            It was only a hobby at first but i decided to pursue it as a career in 2021 when i began self-teaching myself web development. 
+            My name is Sercan and i really enjoy building things. I've always been interested in how things worked and would dismantle things just to get a better understanding of it.
+            I began tinkering with Arduinos and Raspberry Pi's and found that coding was the ultimate sandbox for me to create and actualise whatever cool new idea popped into my head.
+            It was only a hobby at first but i decided to pursue it as a career in 2021 when i began learning web development. 
         </p>
 
         <p>
-            Today, i have over a year of professional work experience in web development with a focus on php back-end and i am always looking for new opportunities to learn and grow.            
+            Today, i have just under 2 years of professional work experience in web development with a focus on php back-end and i am always looking for new opportunities to learn and grow.            
         </p>
 
 
@@ -40,7 +40,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Linux</li>
-                    <li>Node.js</li>
+                    <li>Nodejs</li>
                 </ol>
             </div>
         </div>

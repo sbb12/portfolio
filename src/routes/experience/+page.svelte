@@ -42,28 +42,33 @@
                 <h3>Developer <a href="https://uk.emglive.com/"><span>@ EMG</span></a></h3> 
                 <h5>September 2022 - December 2022</h5>
                 <ol>
-                    <li>Fixed term contract to develop and build from the ground up a crew time tracking portal using Laravel as well as maintain and optimise the previous system.</li>
+                    <li>Assigned with the responsibility of reconstructing the crew time tracking portal on the Laravel framework, 
+                        in order to enhance security measures, facilitate seamless incorporation of future functionalities, 
+                        and improve the system architecture.</li>
                     <li>Write modern, performant and maintainable PHP and TypeScript code with clear documentation.</li>
                     <li>Integrate with multiple SQL databases, redis cache and worker processes hosted on heroku.</li>
-                    <li>Front end built with HTML, CSS and TypeScript.</li>
+                    <li>Coordinate with other departments of the business to ensure smooth operation of their web services</li>
+                    <li>Improve API and SQL performance and efficiency to greatly reduce response times</li>
                 </ol>
             </div>
             <div class="job-details" class:current={selected === 'BFI'}>
                 <h3>Junior Developer <a href="https://www.wearebfi.co.uk/"><span>@ BFI - Big Fish Internet</span></a></h3> 
                 <h5>July 2021 -  September 2022</h5>
                 <ol>
-                    <li>Maintained and built features for clients primarily using HTML, CSS, JavaScript and JQuery.</li>
-                    <li>Provide support for WordPress sites including plugin integrations, functional builds, template modifications and development of custom features.</li>
-                    <li>Built from the ground up standalone high traffic sites for Vision express for their customer appointment amendments web app and friend referral scheme. </li>
-                    <li>Mostly back end work on the LAMP tech stack, split between WordPress and MVC frameworks like CodIgniter.</li>
-                    <li>Learned many aspects of web development such as DNS management, cloud hosting and even picked up PERL to maintain some of the more legacy sites.</li>
+                    <li>Develop and maintain code for a diverse array of clients primarily using PHP, Linux, MySQL, HTML, CSS and JavaScript.</li>
+                    <li>Provide support for WordPress sites including plugin and API integrations, functional builds, template modifications and custom feature development.</li>
+                    <li>Build stand-alone high traffic web apps for Vision Express using the CodeIgniter framework.</li>
+                    <li>Implement design changes ensuring clean, effective user experiences and mobile responsiveness.</li>
+                    <li>Using Git and SVN for version control, deploying builds on both internal servers and google cloud compute.</li>
+                    <li>Pick up libraries and languages like Perl where needed to meet project requirements.</li>
+                    <li>Through experience and mentorship, learn multiple aspects of web development and best practices.</li>
                 </ol>
             </div>
             <div class="job-details" class:current={selected === 'Misc'}>
                 <h3>Previous non-development work experience</h3> 
                 <h5>Up till July 2021</h5>
                 <ol>
-                    <li>Before begging to my career as a developer, i studied mechanical engineering at sussex university and then mainly worked in the customer service industry</li>
+                    <li>Before beginning to my career as a developer, i studied mechanical engineering at sussex university then worked in property management</li>
                 </ol>
             </div>
         </div>
