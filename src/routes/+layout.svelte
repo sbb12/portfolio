@@ -4,6 +4,10 @@
     import '../app.css'
 </script>
 
+<svelte:head>
+    <title>Sercan Dev</title>
+</svelte:head>
+
 <Nav />
 
 <div class="container">

@@ -120,9 +120,11 @@
             </a>
         </li>
         <li>
+            <a href="/sercan_cv.pdf" target="_blank" on:click={navReset} on:keydown={navReset}>
             <button>
-                Resume
-            </button>
+                    Resume
+                </button>
+            </a>
         </li>
     </ol>
 
