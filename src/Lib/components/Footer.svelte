@@ -63,7 +63,7 @@
             margin-top: 1rem;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 836px) {
             display: none;
         }
     }

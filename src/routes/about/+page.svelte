@@ -66,7 +66,6 @@
             .tech-stack, p{
                 padding: 1rem 0;
             }
-            
         
             .tech-stack{
                 color: rgb(230,230,230);

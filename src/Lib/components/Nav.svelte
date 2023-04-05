@@ -169,12 +169,10 @@
         top: 0rem;
         left: 0;
         z-index: 20;
-
+        
         color: #FAF6EF;
         font-weight: 300;
         width: 100%;
-        // max-width: 50vw;
-
         padding: 2rem 3rem;
 
         display: flex;
