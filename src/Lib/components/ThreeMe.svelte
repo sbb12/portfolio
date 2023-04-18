@@ -3,7 +3,6 @@
     import * as THREE from 'three'
     import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
     import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-	import { CircleGeometry } from 'three';
     
     let canvasEl: HTMLCanvasElement;
     let renderer: THREE.WebGLRenderer;
@@ -94,10 +93,11 @@
             canvasEl.style.display = 'block';
             loadDivEl.style.display = 'none';
 
-
         }, (xhr) => {
             let loaded = (xhr.loaded / xhr.total)
-            loadWheelEl.style.strokeDasharray = "" + 251.2 * loaded + ", 251.2"  
+            if (loadWheelEl) {
+                loadWheelEl.style.strokeDasharray = "" + 251.2 * loaded + ", 251.2"  
+            }
         }, (error) => {
             console.error(error)
         })

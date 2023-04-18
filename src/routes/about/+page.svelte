@@ -11,7 +11,7 @@
         <SectionHead num={'01'} title='About' />
 
         <p> 
-            My name is Sercan and i really enjoy building things. I've always been interested in how things worked and would dismantle things just to get a better understanding of it.
+            I really enjoy building things. I've always been interested in how things worked and would dismantle things just to get a better understanding of them.
             I began tinkering with Arduinos and Raspberry Pi's and found that coding was the ultimate sandbox for me to create and actualise whatever cool new idea popped into my head.
             It was only a hobby at first but i decided to pursue it as a career in 2021 when i began learning web development. 
         </p>

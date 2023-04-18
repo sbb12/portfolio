@@ -18,12 +18,12 @@
             <a href="/" target="_blank" rel="noreferrer"> <h3>This Website</h3> </a>
 
             <div class="project-description">
-                <p>Personal portfolio website to showcase some of the things I've done as a developer. Built as a project to learn SvelteKit and ThreeJs.</p>
+                <p>Personal portfolio website to showcase some of the things I've done as a developer and also to explore SvelteKit, ThreeJs and other technologies that interested me.</p>
             </div>
             <ul>
                 <li>SvelteKit</li>
-                <li>ThreeJs</li>
                 <li>TypeScript</li>
+                <li>ThreeJs</li>
                 <li>SCSS</li>
             </ul>
             <ul>
@@ -70,13 +70,15 @@
 
             <div class="project-description">
                 <p> 
-                    Being unimpressed by all the fitness trackers i've tried I decided to just build my own, allowing me to tailor and improve the user experience of using a tracker. <br>
-                    Simple, clean and intuitive UI with a snappy backend allows for quick and easy tracking and entry of data.
+                    A versatile web app designed to help users monitor their weight, nutrition, and associated costs, empowering them to achieve their goals.<br>
+                    Uses PocketBase as a backend for user authentication and real time database operations.<br>
+                    Allows for scanning of product barcodes to retrieve nutritional information.
                 </p>
             </div>
             <ul>
                 <li>SvelteKit</li>
                 <li>PocketBase</li>
+                <li>Tailwind</li>
             </ul>
             <ul>
                 <li>
@@ -121,9 +123,10 @@
             <a href="https://aoc.surgo.dev" target="_blank" rel="noreferrer"> <h3>Advent of code 2022</h3> </a>
 
             <div class="project-description">
-                <p>Advent of code is a coding challenge that occurs every december. These pages are a good exercise to explain the problem and my solution as well as display some coding aptitude</p>
+                <p>Advent of code is an annual coding challenge. These pages are a good exercise for me to explain problems, articulate my thought processes and communicate my solutions to increasingly complex problems</p>
             </div>
             <ul>
+                <li>SvelteKit</li>
                 <li>TypeScript</li>
                 <li>Canvas</li>
             </ul>
@@ -162,27 +165,27 @@
     </project>
 
     <project class="left">
-        <a href="https://github.com/Pova/Self-Driving-Car" target="_blank" rel="noreferrer" class="img-link">
-            <img src="https://ksps.org.uk/wp-content/uploads/2016/05/placeholder-300x300.gif" alt="placeholder"/>
+        <a href="https://purplepuffer.itch.io/out-of-water" target="_blank" rel="noreferrer" class="img-link">
+            <img src="/oow_page.webp" alt="placeholder"/>
         </a>
         <div class="project-details">
             <h4>Project</h4>
-            <a href="https://github.com/Pova/Self-Driving-Car" target="_blank" rel="noreferrer"> <h3>JS AI visualised</h3> </a>
+            <a href="https://purplepuffer.itch.io/out-of-water" target="_blank" rel="noreferrer"> <h3>Out of water - Game Jam</h3> </a>
 
             <div class="project-description">
                 <p> 
-                    AI neural network visualised in JS. A simple self driving car simulation built with only JS, HTML and a bunch of Math with angles. 
-                    (no libraries used)
-
+                    3D platformer game made in Unity for the 2022 Game Off game jam. <br>
+                    Collaboration project with 2 other developers to create a game in a short amount of time. 
                 </p>
             </div>
             <ul>
-                <li>AI</li>
-                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Unity</li>
+                <li>Express</li>
             </ul>
             <ul>
                 <li>
-                    <a href="https://github.com/Pova/Self-Driving-Car" target="_blank" rel="noreferrer"> 
+                    <a href="https://github.com/DanMossDev/game-off-22" target="_blank" rel="noreferrer"> 
                         <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_12_95)">
                                 <path d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C12.1382 15.054 13.5183 14.0333 14.496 12.6718C15.4737 11.3102 15.9997 9.67624 16 8C16 3.58 12.42 0 8 0Z" fill="white"/>
@@ -196,7 +199,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Pova/Self-Driving-Car" target="_blank" rel="noreferrer">
+                    <a href="https://purplepuffer.itch.io/out-of-water" target="_blank" rel="noreferrer">
                         <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_12_97)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.636 3.5C8.636 3.36739 8.58332 3.24021 8.48955 3.14645C8.39579 3.05268 8.26861 3 8.136 3H1.5C1.10218 3 0.720644 3.15804 0.43934 3.43934C0.158035 3.72064 0 4.10218 0 4.5L0 14.5C0 14.8978 0.158035 15.2794 0.43934 15.5607C0.720644 15.842 1.10218 16 1.5 16H11.5C11.8978 16 12.2794 15.842 12.5607 15.5607C12.842 15.2794 13 14.8978 13 14.5V7.864C13 7.73139 12.9473 7.60421 12.8536 7.51045C12.7598 7.41668 12.6326 7.364 12.5 7.364C12.3674 7.364 12.2402 7.41668 12.1464 7.51045C12.0527 7.60421 12 7.73139 12 7.864V14.5C12 14.6326 11.9473 14.7598 11.8536 14.8536C11.7598 14.9473 11.6326 15 11.5 15H1.5C1.36739 15 1.24021 14.9473 1.14645 14.8536C1.05268 14.7598 1 14.6326 1 14.5V4.5C1 4.36739 1.05268 4.24021 1.14645 4.14645C1.24021 4.05268 1.36739 4 1.5 4H8.136C8.26861 4 8.39579 3.94732 8.48955 3.85355C8.58332 3.75979 8.636 3.63261 8.636 3.5Z" fill="white"/>
@@ -282,7 +285,7 @@
                     height: 400px;
                     width: 555px;
                     object-fit: fill;
-                    filter: brightness(0.5) grayscale(0.5) opacity(0.4);
+                    filter: brightness(0.5) grayscale(0.5) opacity(0.8);
                     border-radius: 4px;
                     transition: all 0.3s ease-in-out;
 
@@ -323,7 +326,7 @@
                     p{
                         color: rgb(160, 160, 160);
                         font-size: 1.1rem;
-                        line-height: 135%;
+                        line-height: 140%;
                     }
                 }
 

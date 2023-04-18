@@ -39,7 +39,7 @@
         
         <div>
             <div class="job-details" class:current={selected === 'EMG'}>
-                <h3>Developer <a href="https://uk.emglive.com/"><span>@ EMG</span></a></h3> 
+                <h3>Developer <a href="https://uk.emglive.com/"><span>@ EMG live</span></a></h3> 
                 <h5>September 2022 - December 2022</h5>
                 <ol>
                     <li>Assigned with the responsibility of reconstructing the crew time tracking portal on the Laravel framework, 
@@ -61,7 +61,6 @@
                     <li>Implement design changes ensuring clean, effective user experiences and mobile responsiveness.</li>
                     <li>Using Git and SVN for version control, deploying builds on both internal servers and google cloud compute.</li>
                     <li>Pick up libraries and languages like Perl where needed to meet project requirements.</li>
-                    <li>Through experience and mentorship, learn multiple aspects of web development and best practices.</li>
                 </ol>
             </div>
             <div class="job-details" class:current={selected === 'Misc'}>

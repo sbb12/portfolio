@@ -121,7 +121,7 @@
         </li>
         <li>
             <a href="/sercan_cv.pdf" target="_blank" on:click={navReset} on:keydown={navReset}>
-            <button>
+                <button>
                     Resume
                 </button>
             </a>
