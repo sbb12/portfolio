@@ -61,12 +61,12 @@
     </project>
 
     <project class="left">
-        <a href="https://eat.surgo.dev/" target="_blank" rel="noreferrer" class="img-link">
+        <a href="https://eat.sercan.co.uk/" target="_blank" rel="noreferrer" class="img-link">
             <img src="/eatit_page.webp" alt="eatit page img"/>
         </a>
         <div class="project-details">
             <h4>Project</h4>
-            <a href="https://eat.surgo.dev/" target="_blank" rel="noreferrer"> <h3>EatIt - calorie and fitness tracker</h3> </a>
+            <a href="https://eat.sercan.co.uk/" target="_blank" rel="noreferrer"> <h3>EatIt - calorie and fitness tracker</h3> </a>
 
             <div class="project-description">
                 <p> 
@@ -96,7 +96,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://eat.surgo.dev/" target="_blank" rel="noreferrer">
+                    <a href="https://eat.sercan.co.uk/" target="_blank" rel="noreferrer">
                         <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_12_97)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.636 3.5C8.636 3.36739 8.58332 3.24021 8.48955 3.14645C8.39579 3.05268 8.26861 3 8.136 3H1.5C1.10218 3 0.720644 3.15804 0.43934 3.43934C0.158035 3.72064 0 4.10218 0 4.5L0 14.5C0 14.8978 0.158035 15.2794 0.43934 15.5607C0.720644 15.842 1.10218 16 1.5 16H11.5C11.8978 16 12.2794 15.842 12.5607 15.5607C12.842 15.2794 13 14.8978 13 14.5V7.864C13 7.73139 12.9473 7.60421 12.8536 7.51045C12.7598 7.41668 12.6326 7.364 12.5 7.364C12.3674 7.364 12.2402 7.41668 12.1464 7.51045C12.0527 7.60421 12 7.73139 12 7.864V14.5C12 14.6326 11.9473 14.7598 11.8536 14.8536C11.7598 14.9473 11.6326 15 11.5 15H1.5C1.36739 15 1.24021 14.9473 1.14645 14.8536C1.05268 14.7598 1 14.6326 1 14.5V4.5C1 4.36739 1.05268 4.24021 1.14645 4.14645C1.24021 4.05268 1.36739 4 1.5 4H8.136C8.26861 4 8.39579 3.94732 8.48955 3.85355C8.58332 3.75979 8.636 3.63261 8.636 3.5Z" fill="white"/>
@@ -115,12 +115,12 @@
     </project>
 
     <project class="right">
-        <a href="https://aoc.surgo.dev" class="img-link" target="_blank" rel="noreferrer">
+        <a href="https://aoc.sercan.co.uk" class="img-link" target="_blank" rel="noreferrer">
             <img src="/aoc_page.webp" alt="advent of code page image"/>
         </a>
         <div class="project-details">
             <h4>Project</h4>
-            <a href="https://aoc.surgo.dev" target="_blank" rel="noreferrer"> <h3>Advent of code 2022</h3> </a>
+            <a href="https://aoc.sercan.co.uk" target="_blank" rel="noreferrer"> <h3>Advent of code 2022</h3> </a>
 
             <div class="project-description">
                 <p>Advent of code is an annual coding challenge. These pages are a good exercise for me to explain problems, articulate my thought processes and communicate my solutions to increasingly complex problems</p>
@@ -146,7 +146,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://aoc.surgo.dev" target="_blank" rel="noreferrer">
+                    <a href="https://aoc.sercan.co.uk" target="_blank" rel="noreferrer">
                         <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_12_97)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.636 3.5C8.636 3.36739 8.58332 3.24021 8.48955 3.14645C8.39579 3.05268 8.26861 3 8.136 3H1.5C1.10218 3 0.720644 3.15804 0.43934 3.43934C0.158035 3.72064 0 4.10218 0 4.5L0 14.5C0 14.8978 0.158035 15.2794 0.43934 15.5607C0.720644 15.842 1.10218 16 1.5 16H11.5C11.8978 16 12.2794 15.842 12.5607 15.5607C12.842 15.2794 13 14.8978 13 14.5V7.864C13 7.73139 12.9473 7.60421 12.8536 7.51045C12.7598 7.41668 12.6326 7.364 12.5 7.364C12.3674 7.364 12.2402 7.41668 12.1464 7.51045C12.0527 7.60421 12 7.73139 12 7.864V14.5C12 14.6326 11.9473 14.7598 11.8536 14.8536C11.7598 14.9473 11.6326 15 11.5 15H1.5C1.36739 15 1.24021 14.9473 1.14645 14.8536C1.05268 14.7598 1 14.6326 1 14.5V4.5C1 4.36739 1.05268 4.24021 1.14645 4.14645C1.24021 4.05268 1.36739 4 1.5 4H8.136C8.26861 4 8.39579 3.94732 8.48955 3.85355C8.58332 3.75979 8.636 3.63261 8.636 3.5Z" fill="white"/>
